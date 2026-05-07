@@ -60,3 +60,16 @@ site:target.com intitle:"Please Login"
 intitle:"webcamXP 5" site:target.com
 inurl:"/view/index.shtml" site:target.com
 ```
+
+## === WORKFLOW INFO ===
+
+```
+1. Google dork site:target.com → map surface
+2. Find subdomains → site:*.target.com
+3. Find exposed files → filetype:env/log/sql/bak
+4. Find error pages → intext:"SQL syntax"
+5. Shodan → hostname:target.com → all open ports
+6. Shodan → ssl:"target.com" → hidden subdomains
+7. Check GHDB for target-specific dorks
+8. Log everything → feed into CONF/ATHN tests
+```
